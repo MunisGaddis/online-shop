@@ -1,0 +1,3 @@
+kubectl port-forward svc/online-app-svc 5173:80 &
+
+Access App :- localhost:5173
