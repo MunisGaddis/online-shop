@@ -9,16 +9,14 @@ spec:
   selector:
     matchLabels:
       app: online-shop
-
   template:
     metadata:
-      name: online-shop-pod
       labels:
-       app: online-shop
-
+        app: online-shop
     spec:
       containers:
         - name: online-shop-container
           image: monudocker334/online-shop:latest
+          imagePullPolicy: Always
           ports:
             - containerPort: 80
